@@ -34,11 +34,11 @@ scrape_configs:
     static_configs:
       - targets: ['pushgateway:9091']
 
-  - job_name: 'windows'
+  - job_name: 'hoe'
     scrape_interval: 10s
     scrape_timeout: 10s
     static_configs:
-      - targets: ['172.31.15.225:9182']
+      - targets: ['10.0.2.201:9182', '10.0.4.66:9182']
 
 
 
